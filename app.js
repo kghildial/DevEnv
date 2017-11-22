@@ -7,10 +7,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + 'public'));
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.get('/', function(req, res) {
+app.get('/', function(req, res){
   res.send('Root route');
 });
 
-app.listen(3000, function() {
+app.listen(3000, function(){
   console.log('Server started...');
 });
