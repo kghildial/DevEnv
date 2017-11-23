@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
+const browserSync = require('browser-sync');
 
 gulp.task('nodemon', function(cb){
   var called = false;
@@ -20,5 +21,13 @@ gulp.task('nodemon', function(cb){
     setTimeout(function(){
       reload({stream: false});
     }, 1000);
+  });
+});
+
+gulp.task('browser-sync', ['nodemon'], function(){
+  browserSync({
+    proxy: 'localhost:3000',
+    port: 5000,
+    notify: false
   });
 });
