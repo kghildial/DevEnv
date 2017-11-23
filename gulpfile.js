@@ -1,6 +1,9 @@
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 const browserSync = require('browser-sync');
+const sass = require('gulp-sass');
+const cssnano = require('gulp-cssnano');
+const rename = require('gulp-rename');
 
 gulp.task('nodemon', function(cb){
   var called = false;
@@ -30,4 +33,13 @@ gulp.task('browser-sync', ['nodemon'], function(){
     port: 5000,
     notify: false
   });
+});
+
+gulp.task('sass', function(){
+  return gulp.src('./public/sass/**/*.scss')
+  .pipe(sass())
+  .pipe(cssnano())
+  .pipe(rename({suffix: '.min'}))
+  .pipe(gulp.dest('./public/css'))
+  .pipe(browserSync.reload({ stream: true}));
 });
