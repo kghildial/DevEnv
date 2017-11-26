@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const nodemon = require('gulp-nodemon');
 const browserSync = require('browser-sync');
+const reload = browserSync.reload;
 const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const rename = require('gulp-rename');
@@ -42,4 +43,11 @@ gulp.task('sass', function(){
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest('./public/css'))
   .pipe(browserSync.reload({ stream: true}));
+});
+
+
+gulp.task('watch', ['browser-sync', 'sass'] ,function(){
+  gulp.watch('./views/**/*.ejs', reload);
+  gulp.watch('./public/sass/**/*.scss', ['sass']);
+  gulp.watch('./public/js/**/*.js', reload);
 });
