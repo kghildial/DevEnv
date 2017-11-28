@@ -14,7 +14,7 @@
     "express": "latest"
   },
   "devDependencies": {
-    "browser-sync": "^latest",
+    "browser-sync": "latest",
     "gulp": "latest",
     "gulp-cssnano": "latest",
     "gulp-nodemon": "latest",
