@@ -9,16 +9,16 @@
   "author": "Kinshuk Ghildial",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.2",
-    "ejs": "^2.5.7",
-    "express": "^4.16.2"
+    "body-parser": "latest",
+    "ejs": "latest",
+    "express": "latest"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1",
-    "gulp-cssnano": "^2.1.2",
-    "gulp-nodemon": "^2.2.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "browser-sync": "^latest",
+    "gulp": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-nodemon": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest"
   }
 }
