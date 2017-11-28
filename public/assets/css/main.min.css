@@ -1,1 +1,1 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");body{background:#eee;text-align:center;margin-top:300px;font-family:Lato,sans-serif}body h1{font-size:90px;font-weight:300}
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");a{text-decoration:none;color:inherit}a:hover{color:#05f}body{background:#eee;text-align:center;margin-top:300px;font-family:Lato,sans-serif}body h1{font-size:90px;font-weight:300}body p{letter-spacing:10px}body p img{display:inline;vertical-align:middle;width:20px}body p a{transition:.5s}

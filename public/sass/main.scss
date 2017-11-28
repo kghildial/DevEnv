@@ -9,4 +9,15 @@ body{
     font-size: 90px;
     font-weight: 300;
   }
+  p{
+    letter-spacing: 10px;
+    img{
+      display: inline;
+      vertical-align: middle;
+      width: 20px;
+    }
+    a{
+      transition: .5s;
+    }
+  }
 }
