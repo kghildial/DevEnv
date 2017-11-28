@@ -1,5 +1,12 @@
+@import "reset";
+
 body{
   background: #eeeeee;
   text-align: center;
   margin-top: 300px;
+  font-family: $font;
+  h1{
+    font-size: 90px;
+    font-weight: 300;
+  }
 }
