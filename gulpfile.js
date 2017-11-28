@@ -41,7 +41,7 @@ gulp.task('sass', function(){
   .pipe(sass())
   .pipe(cssnano())
   .pipe(rename({suffix: '.min'}))
-  .pipe(gulp.dest('./public/css'))
+  .pipe(gulp.dest('./public/assets/css'))
   .pipe(browserSync.reload({ stream: true}));
 });
 
@@ -49,5 +49,5 @@ gulp.task('sass', function(){
 gulp.task('watch', ['browser-sync', 'sass'] ,function(){
   gulp.watch('./views/**/*.ejs', reload);
   gulp.watch('./public/sass/**/*.scss', ['sass']);
-  gulp.watch('./public/js/**/*.js', reload);
+  gulp.watch('./public/assets/js/**/*.js', reload);
 });
