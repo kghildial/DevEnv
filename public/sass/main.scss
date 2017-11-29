@@ -1,7 +1,7 @@
 @import "reset";
 
 body{
-  background: #eeeeee;
+  background: #EDEDEE;
   text-align: center;
   margin-top: 300px;
   font-family: $font;
@@ -11,6 +11,7 @@ body{
   }
   p{
     letter-spacing: 10px;
+    font-size: 20px;
     img{
       display: inline;
       vertical-align: middle;
